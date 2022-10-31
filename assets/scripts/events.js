@@ -27,10 +27,11 @@ div.addEventListener('click', event => {
 });
 
 
-button.addEventListener('click', event => {
+button.addEventListener('click', function(event) {
     event.stopPropagation();
     console.log('clicked button');
     console.log(event);
+    console.log(this);
 });
 
 const listItems = document.querySelectorAll('li');
@@ -40,6 +41,7 @@ list.addEventListener('click', event => {
     // console.log(event.currentTarget);
     // event.target.classList.toggle('hightlight');
     event.target.closest('li').classList.toggle('hightlight');
+    form.submit();
 });
 
 // listItems.forEach(listItem => {
