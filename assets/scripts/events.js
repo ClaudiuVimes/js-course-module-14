@@ -41,7 +41,7 @@ list.addEventListener('click', event => {
     // console.log(event.currentTarget);
     // event.target.classList.toggle('hightlight');
     event.target.closest('li').classList.toggle('hightlight');
-    form.submit();
+    // form.submit();
 });
 
 // listItems.forEach(listItem => {
